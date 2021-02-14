@@ -34,3 +34,7 @@ def setup_week04():
     download_github_code('week04/lfw_dataset.py')
     download_github_code('utils/download_utils.py')
     download_github_code('utils/grading.py')
+
+
+def setup_week05():
+    download_github_code('utils/grading.py')

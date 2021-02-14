@@ -15,3 +15,9 @@ def setup_week01():
 
 def setup_week02():
     download_github_code('utils/grading.py')
+
+
+def setup_week02_honor():
+    download_github_code('utils/download_utils.py')
+    download_github_code('utils/tqdm_utils.py')
+

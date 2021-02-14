@@ -38,3 +38,4 @@ def setup_week04():
 
 def setup_week05():
     download_github_code('utils/grading.py')
+    download_github_code('week05/names.txt')

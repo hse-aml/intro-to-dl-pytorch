@@ -12,3 +12,6 @@ def setup_week01():
     download_github_code('week01/data/train.npy')
     download_github_code('week01/data/target.npy')
 
+
+def setup_week02():
+    download_github_code('utils/grading.py')

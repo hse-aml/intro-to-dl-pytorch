@@ -26,12 +26,14 @@ def setup_week03_1():
 
 
 def setup_week03_2():
+    download_github_code('utils/tqdm_utils.py')
     download_github_code('utils/download_utils.py')
     download_github_code('utils/grading.py')
 
 
 def setup_week04():
     download_github_code('week04/lfw_dataset.py')
+    download_github_code('utils/tqdm_utils.py')
     download_github_code('utils/download_utils.py')
     download_github_code('utils/grading.py')
 
@@ -39,3 +41,9 @@ def setup_week04():
 def setup_week05():
     download_github_code('utils/grading.py')
     download_github_code('week05/names.txt')
+
+
+def setup_week06():
+    download_github_code('utils/grading.py')
+    download_github_code('week06/beheaded_inception3.py')
+    download_github_code('week06/grading_utils.py')

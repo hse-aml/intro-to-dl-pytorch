@@ -130,3 +130,6 @@ dmypy.json
 
 # solved notebooks
 *_solved*
+
+# any zipped
+*.zip

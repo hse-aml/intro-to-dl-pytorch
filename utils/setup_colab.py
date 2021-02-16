@@ -47,3 +47,4 @@ def setup_week06():
     download_github_code('utils/grading.py')
     download_github_code('week06/beheaded_inception3.py')
     download_github_code('week06/grading_utils.py')
+    os.system('wget -qO- https://github.com/hse-aml/intro-to-dl-pytorch/releases/download/final_project/handout.tar.gz | tar -xzvf - -C .')

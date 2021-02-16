@@ -86,28 +86,6 @@ def link_all_files_from_dir(src_dir, dst_dir):
                 os.symlink(os.path.abspath(src_file), dst_file)
 
 
-def download_all_keras_resources(keras_models, keras_datasets):
-    # Originals:
-    # http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
-    # https://github.com/fchollet/deep-learning-models/releases/download/v0.5/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5
-    # https://s3.amazonaws.com/img-datasets/mnist.npz
-    sequential_downloader(
-        "v0.2",
-        [
-            "inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5"
-        ],
-        keras_models
-    )
-    sequential_downloader(
-        "v0.2",
-        [
-            "cifar-10-batches-py.tar.gz",
-            "mnist.npz"
-        ],
-        keras_datasets
-    )
-
-
 def download_week_3_resources(save_path):
     # Originals:
     # http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz
@@ -154,11 +132,6 @@ def download_week_6_resources(save_path):
         ],
         save_path
     )
-
-
-def link_all_keras_resources():
-    link_all_files_from_dir("../readonly/keras/datasets/", os.path.expanduser("~/.keras/datasets"))
-    link_all_files_from_dir("../readonly/keras/models/", os.path.expanduser("~/.keras/models"))
 
 
 def link_week_3_resources():

@@ -49,6 +49,5 @@ def setup_week06():
     download_github_code('week06/grading_utils.py')
     os.system('wget -qO- https://github.com/hse-aml/intro-to-dl-pytorch/releases/download/final_project/handout.tar.gz | tar -xzvf - -C .')
 
-    os.mkdir('data')
     for i in range(30):
         os.system(f'wget -q https://raw.githubusercontent.com/hse-aml/intro-to-dl-pytorch/main/week06/data/img_{i}.jpg -O data/img_{i}')

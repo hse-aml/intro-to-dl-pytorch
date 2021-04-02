@@ -4,7 +4,7 @@ import numpy as np
 def test_vocab(vocab):
     return [
         len(vocab),
-        len(np.unique(list(vocab.values()))),
+        len(np.unique(vocab)),
     ]
 
 

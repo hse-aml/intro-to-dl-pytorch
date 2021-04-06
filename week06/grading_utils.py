@@ -1,11 +1,5 @@
-import numpy as np
-
-
 def test_vocab(vocab):
-    return [
-        len(vocab),
-        len(np.unique(vocab)),
-    ]
+    return len(vocab)
 
 
 def test_network(network):
